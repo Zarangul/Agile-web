@@ -1,0 +1,17 @@
+.zb-btn {
+     background: #E02B2B; 
+     font-size: 15px; 
+     font-weight: bold;
+     width: 280px;
+     height: 70px;
+     border: none;
+     border-radius: 40px;
+     transition: all .3s;
+    letter-spacing: 3px;
+
+}
+.zb-btn:hover {
+    transition: all .3s;
+    background: #c92626;
+    letter-spacing: 7px;
+}

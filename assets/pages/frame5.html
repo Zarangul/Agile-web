@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../css2/style.css" />
+  <title>Frame 5</title>
+</head>
+
+<body id="frame-5">
+  <header>
+    <h2 class="header__page-title">Buy</h2>
+    <div class="header__user">
+      <button>
+        <img src="../images/user 2.png" alt="user icon" />
+      </button>
+      <div>
+        <p>Name Surname</p>
+        <p>Username@agile.az</p>
+      </div>
+      <button id="dropdown-btn">
+        <img src="../images/dots 1.png" alt="dots icon" />
+      </button>
+      <div class="dropdown">
+        <ul>
+          <li><a href="#">Dashboard</a></li>
+          <li><a href="#">Licences</a></li>
+          <li><a href="#">Support</a></li>
+          <li><a href="#">Settings</a></li>
+          <li><a href="#">Logout</a></li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+      <div class="row1">
+        <h3>Buy new subscription</h3>
+      </div>
+      <div class="row2">
+        <ul>
+          <li>
+            <label for="select-product">1. Choose product name from list*</label>
+            <select name="select-product" id="select-product">
+              <option selected disabled value="">Product name</option>
+              <option value="dialer">Dialer</option>
+              <option value="call">Call Center (CC)</option>
+            </select>
+          </li>
+          <li>
+            <label for="users-input">2. How many users do you want to connect? (please input
+              quantity)*</label>
+
+            <input type="text" placeholder="0" id="users-input" />
+          </li>
+          <li>
+            <label for="select-year">3. How many years do you want support?*</label>
+
+            <select name="year" id="select-year">
+              <option selected disabled value="">0</option>
+              <option value="1">1 year</option>
+              <option value="2">2 year</option>
+              <option value="3">3 year</option>
+              <option value="4">4 year</option>
+              <option value="5">5 year</option>
+            </select>
+          </li>
+        </ul>
+      </div>
+      <div class="row3">
+        <button>Back</button>
+        <button>Send a request</button>
+      </div>
+    </div>
+  </main>
+  <script src="../script/main.js"></script>
+</body>
+
+</html>

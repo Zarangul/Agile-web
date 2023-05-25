@@ -34,6 +34,11 @@ header {
   justify-content: space-between;
   align-items: center;
 }
+@media (max-width: 724px) {
+  header {
+    padding: 26px 30px;
+  }
+}
 
 .header__page-title {
   font-weight: 700;
@@ -41,6 +46,17 @@ header {
   line-height: 49px;
   text-align: center;
   color: white;
+}
+@media (max-width: 724px) {
+  .header__page-title {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 824px) {
+  .header__user-details {
+    display: none;
+  }
 }
 
 .header__user {
@@ -99,6 +115,12 @@ main {
   display: grid;
   place-items: center;
   padding: 65px 45px;
+  width: 100%;
+}
+@media (max-width: 824px) {
+  main {
+    padding: 30px 20px;
+  }
 }
 
 #frame-5 .container {
@@ -109,6 +131,28 @@ main {
   background-color: white;
   width: 90%;
   padding: 30px 100px;
+}
+@media (max-width: 824px) {
+  #frame-5 .container {
+    padding: 20px 40px;
+    height: 790px;
+  }
+  #frame-5 .container .row3 button {
+    width: 200px !important;
+  }
+}
+@media (max-width: 610px) {
+  #frame-5 .container .row1 {
+    text-align: center;
+  }
+  #frame-5 .container .row2 {
+    font-size: 20px;
+  }
+  #frame-5 .container .row3 {
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+  }
 }
 #frame-5 .container .row1 {
   align-self: center;
@@ -195,8 +239,25 @@ main {
   -moz-column-gap: 50px;
        column-gap: 50px;
 }
+@media (max-width: 900px) {
+  #frame-8 .container {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 20px;
+    padding: 25px 50px;
+    height: 900px;
+  }
+  #frame-8 .container .col-left, #frame-8 .container .col-right, #frame-8 .container .col-bottom {
+    grid-column: span 1 !important;
+    grid-row: span 1 !important;
+  }
+  #frame-8 .container .col-bottom button {
+    width: 200px !important;
+    font-size: 20px !important;
+  }
+}
 #frame-8 .container .col-bottom {
-  grid-column: span 4;
+  grid-column: span 2;
   justify-content: space-evenly;
   display: flex;
   grid-row: span 1;
@@ -245,7 +306,7 @@ main {
   display: flex;
   flex-direction: column;
   gap: 15px;
-  grid-column: span 3;
+  grid-column: span 1;
   grid-row: span 2;
   width: 100%;
 }
@@ -286,6 +347,7 @@ main {
 
 .agile-table {
   width: 100%;
+  min-width: 1200px;
 }
 .agile-table thead {
   height: 118px;
@@ -389,6 +451,16 @@ main {
   justify-content: space-between;
   width: 100%;
 }
+@media (max-width: 824px) {
+  #frame-7 .ticket-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 35px;
+  }
+  #frame-7 .ticket-container p {
+    text-align: center;
+  }
+}
 #frame-7 .ticket-container p {
   font-weight: 600;
   font-size: 25px;
@@ -410,4 +482,9 @@ main {
 }
 #frame-7 .agile-table tbody td.yellow {
   color: #ffe600;
+}
+
+.responsive-table-container {
+  overflow-x: auto;
+  width: 100%;
 }/*# sourceMappingURL=style4578.css.map */

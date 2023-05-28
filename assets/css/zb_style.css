@@ -45,3 +45,23 @@ section {
   min-height: 85vh;
   background-color: #f3f7f6;
 }
+
+.reg-grid {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr;
+}
+
+.reg-grid > p {
+    gap: 10px !important;
+    justify-content: flex-start !important;
+    font-size: 20px;
+}
+
+@media (max-width: 724px) {
+    .reg-grid {
+        grid-template-columns: 1fr;
+    }
+    .reg-grid p {
+
+    }
+}

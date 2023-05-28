@@ -11,44 +11,27 @@
     justify-content: space-around;
     margin: auto;
     height: 85vh;
-    
 }
+
 
 h1{
     text-align: center;
     font-weight: 900;
+  
 }
 
 button{
     padding: 16px;
-    width: 220px;
-    
-
-    
+    width: 190px;
 }
 
-.input1{
-    display: flex;
-    flex-direction: column;
-    margin: auto;
-    width: 40%; 
-    height: 50px !important;
-    margin-bottom: 15px;
-    background:  #F3F7F6;
-    border: none;
-    padding: 20px;
-}
+
+
+
 
 .rufet-right{
-    display: flex;
-    flex-direction: row !important;
-    align-items: center;
     background-color: #51B5C3;
     color: white;
-   
 }
 
-.rufet-right2{
-    height: 350px;
-   margin: auto;
-}
+

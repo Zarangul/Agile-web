@@ -20,6 +20,13 @@
   background: #c92626;
   letter-spacing: 7px;
 }
+.zb {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center !important;
+    width: 100%;
+    justify-content: space-between !important;
+}
 .zb-company-name {
   border-radius: 20px;
   width: 350px;

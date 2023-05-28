@@ -247,7 +247,9 @@ main {
     padding: 25px 50px;
     height: 900px;
   }
-  #frame-8 .container .col-left, #frame-8 .container .col-right, #frame-8 .container .col-bottom {
+  #frame-8 .container .col-left,
+  #frame-8 .container .col-right,
+  #frame-8 .container .col-bottom {
     grid-column: span 1 !important;
     grid-row: span 1 !important;
   }
@@ -347,7 +349,6 @@ main {
 
 .agile-table {
   width: 100%;
-  min-width: 1200px;
 }
 .agile-table thead {
   height: 118px;
@@ -356,6 +357,39 @@ main {
   border-radius: 15px;
   display: grid;
   margin-bottom: 34px;
+}
+@media (max-width: 1250px) {
+  .agile-table thead th,
+  .agile-table thead th > button {
+    font-size: 24px !important;
+  }
+}
+@media (max-width: 1000px) {
+  .agile-table thead th,
+  .agile-table thead th > button {
+    font-size: 22px !important;
+  }
+  .agile-table thead th > img {
+    display: none;
+  }
+}
+@media (max-width: 782px) {
+  .agile-table thead th,
+  .agile-table thead th > button {
+    font-size: 20px !important;
+  }
+}
+@media (max-width: 550px) {
+  .agile-table thead {
+    height: 70px !important;
+  }
+  .agile-table thead th,
+  .agile-table thead th > button {
+    font-size: 15px !important;
+  }
+  .agile-table thead th > button {
+    padding: 8px 16px !important;
+  }
 }
 .agile-table thead tr {
   display: flex;
@@ -371,6 +405,32 @@ main {
   line-height: 37px;
   text-align: center;
 }
+@media (max-width: 1250px) {
+  .agile-table tbody td,
+  .agile-table tbody td > button {
+    font-size: 23px !important;
+  }
+}
+@media (max-width: 1000px) {
+  .agile-table tbody td, .agile-table tbody td > button {
+    font-size: 20px !important;
+  }
+}
+@media (max-width: 782px) {
+  .agile-table tbody td,
+  .agile-table tbody td > button {
+    font-size: 16px !important;
+  }
+  .agile-table tbody td > button {
+    padding: 3px 15px !important;
+  }
+}
+@media (max-width: 550px) {
+  .agile-table tbody td,
+  .agile-table tbody td > button {
+    font-size: 14px !important;
+  }
+}
 .agile-table tbody tr {
   display: flex;
   justify-content: space-between;
@@ -379,10 +439,10 @@ main {
   border-radius: 15px;
 }
 .agile-table tbody tr td {
-  flex: 1;
+  flex: 1 1 0;
+  width: 0;
   display: grid;
   place-items: center;
-  padding: 26px 43px;
   border: 0;
   border-right: 1px solid rgba(0, 0, 0, 0.7);
   height: 78px;
@@ -482,9 +542,4 @@ main {
 }
 #frame-7 .agile-table tbody td.yellow {
   color: #ffe600;
-}
-
-.responsive-table-container {
-  overflow-x: auto;
-  width: 100%;
 }/*# sourceMappingURL=style4578.css.map */

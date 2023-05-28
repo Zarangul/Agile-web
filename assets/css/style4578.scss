@@ -38,7 +38,7 @@ header {
   align-items: center;
 
   @media (max-width: 724px) {
-    padding: 26px 30px
+    padding: 26px 30px;
   }
 }
 
@@ -50,7 +50,7 @@ header {
   color: white;
 
   @media (max-width: 724px) {
-    font-size: 30px
+    font-size: 30px;
   }
 }
 
@@ -167,7 +167,6 @@ main {
       flex-direction: column;
       gap: 20px;
       align-items: center;
-
     }
   }
 
@@ -259,14 +258,16 @@ main {
   grid-template-rows: 2fr 1fr;
   column-gap: 50px;
 
-  @media (max-width: 900px){
+  @media (max-width: 900px) {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     gap: 20px;
     padding: 25px 50px;
     height: 900px;
 
-    .col-left, .col-right, .col-bottom {
+    .col-left,
+    .col-right,
+    .col-bottom {
       grid-column: span 1 !important;
       grid-row: span 1 !important;
     }
@@ -380,7 +381,7 @@ main {
 
 .agile-table {
   width: 100%;
-  min-width: 1200px;
+
   thead {
     height: 118px;
     width: 100%;
@@ -389,6 +390,37 @@ main {
     display: grid;
     margin-bottom: 34px;
 
+    @media (max-width: 1250px) {
+      th,
+      th > button {
+        font-size: 24px !important;
+      }
+    }
+    @media (max-width: 1000px) {
+      th,
+      th > button {
+        font-size: 22px !important;
+      }
+      th > img {
+        display: none;
+      }
+    }
+    @media (max-width: 782px) {
+      th,
+      th > button {
+        font-size: 20px !important;
+      }
+    }
+    @media (max-width: 550px) {
+      height: 70px !important;
+      th,
+      th > button {
+        font-size: 15px !important;
+      }
+      th>button {
+        padding: 8px 16px !important
+      }
+    }
     tr {
       display: flex;
       justify-content: space-between;
@@ -408,6 +440,32 @@ main {
   }
 
   tbody {
+    @media (max-width: 1250px) {
+      td,
+      td > button {
+        font-size: 23px !important;
+      }
+    }
+    @media (max-width: 1000px){
+      td, td>button {
+        font-size: 20px !important;
+      }
+    }
+    @media (max-width: 782px) {
+      td,
+      td > button {
+        font-size: 16px !important;
+      }
+      td > button {
+        padding: 3px 15px !important
+      }
+    }
+    @media (max-width: 550px) {
+      td,
+      td > button {
+        font-size: 14px !important;
+      }
+    }
     tr {
       display: flex;
       justify-content: space-between;
@@ -416,10 +474,11 @@ main {
       border-radius: 15px;
 
       td {
-        flex: 1;
+        flex: 1 1 0;
+        width: 0;
         display: grid;
         place-items: center;
-        padding: 26px 43px;
+        // padding: 26px 43px;
         border: 0;
         border-right: 1px solid rgba(0, 0, 0, 0.7);
         height: 78px;
@@ -459,6 +518,7 @@ main {
   }
 
   tbody {
+
     tr {
       td:nth-child(4) {
         font-weight: 700;
@@ -548,9 +608,4 @@ main {
       }
     }
   }
-}
-
-.responsive-table-container {
-  overflow-x: auto;
-  width: 100%;
 }

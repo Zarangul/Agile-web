@@ -61,7 +61,4 @@ section {
     .reg-grid {
         grid-template-columns: 1fr;
     }
-    .reg-grid p {
-
-    }
 }

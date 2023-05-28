@@ -146,11 +146,17 @@ main {
   }
 }
 @media (max-width: 610px) {
+  #frame-5 .container {
+    padding: 15px 20px;
+  }
   #frame-5 .container .row1 {
     text-align: center;
   }
   #frame-5 .container .row2 {
     font-size: 20px;
+  }
+  #frame-5 .container .row2 select, #frame-5 .container .row2 input {
+    width: 100% !important;
   }
   #frame-5 .container .row3 {
     flex-direction: column;

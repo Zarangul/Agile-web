@@ -1,17 +1,40 @@
-.zb-btn {
-     background: #E02B2B; 
-     font-size: 15px; 
-     font-weight: bold;
-     width: 280px;
-     height: 70px;
-     border: none;
-     border-radius: 40px;
-     transition: all .3s;
-    letter-spacing: 3px;
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
 
+.zb-btn {
+  background: #e02b2b;
+  font-size: 15px;
+  font-weight: bold;
+  width: 280px;
+  height: 70px;
+  border: none;
+  border-radius: 40px;
+  transition: all 0.3s;
+  letter-spacing: 3px;
 }
 .zb-btn:hover {
-    transition: all .3s;
-    background: #c92626;
-    letter-spacing: 7px;
+  transition: all 0.3s;
+  background: #c92626;
+  letter-spacing: 7px;
+}
+.zb-company-name {
+  border-radius: 20px;
+  width: 350px;
+  min-height: 250px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: max(3vh, 1rem) !important;
+}
+h5 {
+  margin: auto !important;
+}
+section {
+  padding: max(3vh, 1rem);
+  min-height: 85vh;
+  background-color: #f3f7f6;
 }

@@ -147,6 +147,7 @@ main {
 }
 @media (max-width: 610px) {
   #frame-5 .container {
+    height: 1080px !important;
     padding: 15px 20px;
   }
   #frame-5 .container .row1 {
@@ -417,10 +418,10 @@ main {
   }
   .agile-table thead th,
   .agile-table thead th > button {
-    font-size: 15px !important;
+    font-size: 12px !important;
   }
   .agile-table thead th > button {
-    padding: 8px 16px !important;
+    padding: 1px 5px !important;
   }
 }
 .agile-table thead tr {
@@ -434,7 +435,7 @@ main {
   place-items: center;
   font-weight: 700;
   font-size: 30px;
-  line-height: 37px;
+  line-height: 20px;
   text-align: center;
 }
 @media (max-width: 1250px) {
@@ -505,6 +506,15 @@ main {
   line-height: 30px;
   padding: 12px 24px;
 }
+@media (max-width: 550px) {
+  #frame-4 .agile-table tbody tr td {
+    flex: 2 1 0;
+  }
+  #frame-4 .agile-table tbody tr td:nth-child(2) {
+    flex-shrink: 2;
+    flex-grow: 1;
+  }
+}
 #frame-4 .agile-table tbody tr td:nth-child(4) {
   font-weight: 700;
   font-size: 25px;
@@ -532,6 +542,11 @@ main {
   padding: 3px 30px;
   display: grid;
   place-items: center;
+}
+@media (max-width: 550px) {
+  #frame-4 .agile-table tbody tr td:nth-child(5) button {
+    padding: 1px 3px !important;
+  }
 }
 
 #frame-7 main {

@@ -1,0 +1,171 @@
+#sign-in-title {
+  color: #51b5c3 !important;
+}
+
+.custom-button {
+  background-color: #51b5c3 !important;
+}
+
+.btn-primary {
+  background-color: #51b5c3 !important;
+  border-color: #ffffff !important;
+  color: #ffffff !important;
+}
+
+#sign-in-button {
+  margin-left: 85px;
+}
+
+.form-control::placeholder {
+    color: 666666!important; 
+    
+  }
+
+.form-control{
+  background-color: e9ecef!important;
+}
+
+.left-box{
+    background-color: #51B5C3;
+    color: white;
+     height: 85vh;
+}
+
+  .btn-primary:hover {
+      background-color: #0991A4!important;
+    }
+
+
+
+.container {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-container {
+  position: relative;
+}
+
+.input-container i {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #888;
+}
+
+input[type="email1"],
+input[type="password1"] {
+  padding: 10px 10px 10px 30px;
+  margin-bottom: 0px;
+  width: 100%;
+  box-sizing: border-box;
+  background-color: #F3F7F6;
+  border: none;
+}
+
+input[type="email1"]::placeholder,
+input[type="password1"]::placeholder {
+  color: #888;
+}
+
+input[type="email1"]:focus::placeholder,
+input[type="password1"]:focus::placeholder {
+  color: transparent;
+}
+
+.container {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-container {
+  position: relative;
+}
+
+.input-container i {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #888;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="password"] {
+  padding: 10px 10px 10px 30px;
+ 
+  width: 450px;
+  box-sizing: border-box;
+  background-color: #F3F7F6;
+  border: none;
+}
+
+input[type="text"]::placeholder,
+input[type="email"]::placeholder,
+input[type="tel"]::placeholder,
+input[type="password"]::placeholder {
+  color: #888;
+}
+
+input[type="text"]:focus::placeholder,
+input[type="email"]:focus::placeholder,
+input[type="tel"]:focus::placeholder,
+input[type="password"]:focus::placeholder {
+  color: transparent;
+}
+
+
+
+@media (max-width: 768px) {
+  .container {
+    max-width: 100%;
+  }
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="password"] {
+
+  width: 100%;
+  box-sizing: border-box;
+  background-color: #F3F7F6;
+  border: none;
+}
+
+}
+
+
+
+
+
+
+@media screen and (max-width: 768px) {
+  .rufet {
+    flex-direction: column;
+  }
+
+  .rufet-left {
+    width: 100%;
+    margin-bottom: 2rem;
+    padding-block: 30px;
+  }
+
+  .rufet-right {
+    width: 100%;
+  }
+}
+
